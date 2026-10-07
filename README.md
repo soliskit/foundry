@@ -9,9 +9,19 @@ A starter for a new project, with a blank Playbook, decision and evidence record
 3. Fill in `docs/charter.md`, `docs/build-plan.md` and `docs/specification.md`. Keep unresolved decisions open.
 4. Record decisions in `docs/decision-log.md` and sourced facts in `docs/evidence-record.md`. Keep personal details, message references and private proof outside the public repository.
 5. Add the application's code and meaningful tests. Run `npm ci` and `npm test` before opening a pull request.
-6. Configure the new repository's settings before building. Template contents do not copy repository settings: require pull requests and an up-to-date `test` check on `main`, disallow force pushes and deletion, allow squash merges only, use the PR title as the squash commit title, delete merged branches, and enable secret scanning and push protection where available.
+6. Configure the new repository's settings before building, using the checklist below. Template contents do not copy repository settings.
 
 The included `test` check checks document-shell presence and headings only. It is not proof of application behavior, security or readiness. Replace or extend it with the project's own checks, keeping the required check name stable.
+
+## Repository settings checklist
+
+Do this in the new repository's **Settings** after creating it from the template.
+
+1. **General > Pull Requests**: turn off merge commits and rebase merging, leaving squash merging only. Set the squash commit message to "Pull request title". Turn on "Automatically delete head branches".
+2. **Security > Advanced Security**: enable Secret Protection and Push protection.
+3. **Rules > Rulesets > New branch ruleset** targeting the default branch (`main`), set to Active with an empty bypass list: restrict deletions, block force pushes, and require a pull request before merging with 0 approvals.
+4. Open a pull request or push once so the `test` workflow runs. Then edit the ruleset: require status checks to pass, add the `test` check (GitHub Actions), and require branches to be up to date before merging.
+5. If the repository is a template, turn on "Template repository" under **General**.
 
 ## Layout
 
