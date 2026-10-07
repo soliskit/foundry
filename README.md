@@ -19,8 +19,8 @@ Do this in the new repository's **Settings** after creating it from the template
 
 1. **General > Pull Requests**: turn off merge commits and rebase merging, leaving squash merging only. Set the squash commit message to "Pull request title". Turn on "Automatically delete head branches".
 2. **Security > Advanced Security**: enable Secret Protection and Push protection.
-3. **Branches > Add branch protection rule** for `main`: require a pull request before merging with 0 approvals, and turn on "Do not allow bypassing the above settings". Leave force pushes and deletions off.
-4. Open a pull request or push once so the `test` workflow runs. Then edit the `main` rule: require status checks to pass, add the `test` check (GitHub Actions), and require branches to be up to date before merging.
+3. **Rules > Rulesets > New branch ruleset** targeting the default branch (`main`), set to Active with an empty bypass list: restrict deletions, block force pushes, and require a pull request before merging with 0 approvals.
+4. Open a pull request or push once so the `test` workflow runs. Then edit the ruleset: require status checks to pass, add the `test` check (GitHub Actions), and require branches to be up to date before merging.
 5. If the repository is a template, turn on "Template repository" under **General**.
 
 ## Layout
