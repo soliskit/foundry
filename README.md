@@ -1,12 +1,12 @@
 # Foundry
 
-A starter for a new project, with a blank Playbook, decision and evidence records, and a working document-shell presence and heading check. No application is included.
+A starter for a new project, with a blank Playbook (Charter, Roadmap, How It Works), decision and evidence records, and a working document-shell presence and heading check. No application is included.
 
 ## Start a project
 
 1. Choose **Use this template** on GitHub and create a new repository.
 2. Rename the package and replace this README with the project's introduction.
-3. Fill in `docs/charter.md`, `docs/build-plan.md` and `docs/specification.md`. Keep unresolved decisions open.
+3. Fill in `docs/charter.md`, `docs/roadmap.md` and `docs/how-it-works.md`. Keep unresolved decisions open.
 4. Record decisions in `docs/decision-log.md` and sourced facts in `docs/evidence-record.md`. Keep personal details, message references and private proof outside the public repository.
 5. Add the application's code and meaningful tests. Run `npm ci` and `npm test` before opening a pull request.
 6. Configure the new repository's settings before building, using the checklist below. Template contents do not copy repository settings.
@@ -26,8 +26,9 @@ Do this in the new repository's **Settings** after creating it from the template
 ## Layout
 
 - `docs/charter.md`: purpose, limits and ordered milestones.
-- `docs/build-plan.md`: phases, exit checks and work lanes.
-- `docs/specification.md`: numbered requirements and failure behavior.
+- `docs/roadmap.md`: phases, exit checks and work lanes.
+- `docs/how-it-works.md`: numbered requirements and failure behavior.
+- `docs/process.md`: how every project is planned and recorded.
 - `docs/decision-log.md`: decision, effect and open or settled status.
 - `docs/evidence-record.md`: source, date checked and verified or unproven status.
 - `.github/workflows/test.yml`: push and pull-request checks with read-only permissions and cancellation of replaced runs.
