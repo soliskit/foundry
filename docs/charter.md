@@ -1,6 +1,6 @@
 # Charter
 
-<!-- Explain what the project is, where it stands and what needs a decision. -->
+<!-- Open with plain words: what the project is, where it stands and what the owner decides. -->
 
 ## Purpose
 

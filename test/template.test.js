@@ -4,8 +4,8 @@ import { readFile } from 'node:fs/promises';
 
 const documents = {
   'charter.md': '# Charter',
-  'build-plan.md': '# Build Plan',
-  'specification.md': '# Specification',
+  'roadmap.md': '# Roadmap',
+  'how-it-works.md': '# How It Works',
   'decision-log.md': '# Decision Log',
   'evidence-record.md': '# Evidence Record',
 };
