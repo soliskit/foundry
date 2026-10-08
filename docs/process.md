@@ -27,7 +27,7 @@ The Decision Log and the Evidence Record live in the project repo next to the co
 - Readable at the very top, then progressively more technical. The first lines are plain English for the owner: what it is, where it stands, what the owner decides. Technical detail comes below and grows as the reader goes down.
 - Openings use plain words: key point first, active voice, concrete verbs, each line says why it matters, no jargon.
 - A necessity pass: nothing stays that the file does not need.
-- One copy of any content. Link to it elsewhere.
+- One copy of any content. A link to the single source of a fact is fine. A sentence that only tells the reader where to look next is not.
 - Say "public page", not "brochure".
 
 ## Public repos
@@ -36,8 +36,8 @@ Public repos get only what is necessary. No personal details, no private context
 
 ## Workflow rules
 
-1. **Evidence ledger.** Research passes through several agents, and some flag their own claims as unverified. A label and a date on each fact stops unproven items from sliding into the plan.
-2. **Decision log with proof kept private.** Agents often cannot read the owner's original message and work from a relay. Each decision gets an entry number in the repo log, and the matching message reference stays in the private proof, so any agent can confirm a decision without asking again and the public repo carries no personal details.
+1. **Evidence ledger.** Each outside fact carries a status label and a date, so an unproven claim cannot slip into the plan unnoticed.
+2. **Decision log with proof kept private.** Each decision gets an entry number in the repo log, and the matching proof stays in the private tab. Anyone can confirm a decision without asking the owner again, and the public repo carries no personal details.
 3. **Named gate states.** Every status update says three things separately: review state (not reviewed, reviewed with findings, or review passed), owner authorization (none, or the exact scope given), and execution state (not started, running, done). Nobody calls a plan ready when it is only written. This is separate from the ban on version labels such as draft or v2 in file names and headings.
 4. **Fixed independent reviewer with a checklist.** The reviewer is never the author. Checklist: does each requirement have a check, does each fact have a source, are open items marked open. Findings are accepted or rebutted in writing, not adopted automatically.
 5. **Progress report against the plan.** Each report says which requirement or gate moved, or says nothing moved and why, so a stall shows up early.
