@@ -15,13 +15,14 @@ The included `test` check checks document-shell presence and headings only. It i
 
 ## Repository settings checklist
 
-Do this in the new repository's **Settings** after creating it from the template.
+Configure the repository settings after creating it from the template. The Actions email option below is an account setting, not a repository setting.
 
 1. **General > Pull Requests**: turn off merge commits and rebase merging, leaving squash merging only. Set the squash commit message to "Pull request title". Turn on "Automatically delete head branches".
 2. **Security > Advanced Security**: enable Secret Protection and Push protection.
 3. **Rules > Rulesets > New branch ruleset** targeting the default branch (`main`), set to Active with an empty bypass list: restrict deletions, block force pushes, and require a pull request before merging with 0 approvals.
 4. Open a pull request or push once so the `test` workflow runs. Then edit the ruleset: require status checks to pass, add the `test` check (GitHub Actions), and require branches to be up to date before merging.
 5. If the repository is a template, turn on "Template repository" under **General**.
+6. In your account notification settings, under System > Actions, select Email, do not select Only notify for failed workflows, and save. Successful and failed workflow runs you trigger can then email you. This account-level preference is not copied by the template. Verify delivery after an eligible run finishes; the setting alone does not prove that an email arrived. See [GitHub's Actions notification guidance](https://docs.github.com/en/subscriptions-and-notifications/how-tos/managing-github-actions-notifications).
 
 ## Layout
 
