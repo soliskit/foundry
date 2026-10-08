@@ -1,6 +1,6 @@
 # Process
 
-How every software project here is planned and recorded. This file holds process only. The default permissions and gates are in [Soliskit Principles](https://files.instinct.com/0sd5cy7alzbv-soliskit-principles). That page grants nothing by itself: a repo never records what the owner has authorized, and a permission exists only when the owner gives it.
+How every software project here is planned and recorded. This file holds process only. The default permissions and gates are in [Soliskit Principles](https://files.instinct.com/0sd5cy7alzbv-soliskit-principles). That page grants nothing by itself: a permission exists only when the owner gives it. Public repos may record authorization scope and status, but never the private grant text or proof behind it.
 
 ## Playbook
 
@@ -46,3 +46,18 @@ Public repos get only what is necessary. No personal details, no private context
 6. **Quota guard for free-tier projects.** Each plan lists its limits, the reading that counts against them and a stop rule. Re-check the readings at each phase. A limit change reopens the plan.
 7. **Keep this starter repo current.** Whenever a blanket change is made to all repos, update this repo too.
 8. **Decisions one at a time.** Each decision comes to the owner alone, with a recommendation.
+
+## Parallel work
+
+Independent work runs at the same time; shared work is serialized.
+
+- **Parallel section in every plan.** Every Playbook names what can run at the same time, what must wait, and why. It is titled the same way in each Playbook: Work lanes, or Phases and lanes where phases and lanes share one section.
+- **File ownership list.** Before any stream activates, a list names the owner of every proposed file and marks the shared ones. Every pull request is checked against it.
+- **Lane record.** A named, versioned record. The next lane starts from that version.
+- **Work item record.** Each work item records its scope, owner, input versions, outputs, read and write set, dependencies, independent reviewer and remaining gates.
+- **One lane for shared files.** Changes to shared files go through one integration lane, in dependency order. Conflicting edits do not proceed independently.
+- **Benchmarks.** Every run targets a fixed commit. Feature commits never enter a benchmark tree. The benchmark branch rebases onto current main before each series.
+
+## Starting a stream early
+
+A later implementation stream starts early only with the owner's approval after a non-interference proof: identical required-check names, test counts, skip structure, coverage gates and deployed output. A file split alone is not proof. Planning, drafting, independent reviews, test-harness design and read-only observation run in parallel without a new approval; implementation start gates do not move.
