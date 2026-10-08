@@ -8,11 +8,13 @@
 
 ## Gate states
 
-<!-- For each phase record review state (Not reviewed, Reviewed with findings, or Review passed), exact owner authorization (None until granted, then its scope) and execution state (Not started, Running, or Done). This shell authorizes no phase. -->
+<!-- For each phase record review state (Not reviewed, Reviewed with findings, or Review passed), public owner-authorization status (None until granted, then its scope; private grant text and proof stay outside the repo) and execution state (Not started, Running, or Done). This shell authorizes no phase. -->
 
 ## Work lanes
 
 <!-- Record what can run together, what must wait and why. Name file owners and shared files. -->
+
+<!-- Keep a versioned lane record and work-item records with scope, owner, input/output identities, read/write sets, dependencies, independent reviewer and remaining gates. -->
 
 ## Limits and stop rules
 
