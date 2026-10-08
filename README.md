@@ -22,7 +22,7 @@ Configure the repository settings after creating it from the template. The Actio
 3. **Rules > Rulesets > New branch ruleset** targeting the default branch (`main`), set to Active with an empty bypass list: restrict deletions, block force pushes, and require a pull request before merging with 0 approvals.
 4. Open a pull request or push once so the `test` workflow runs. Then edit the ruleset: require status checks to pass, add the `test` check (GitHub Actions), and require branches to be up to date before merging.
 5. If the repository is a template, turn on "Template repository" under **General**.
-6. In your account **Settings > Notifications > Actions**, enable **Email** and leave **Only notify for failed workflows** unchecked so successful and failed runs can email you. This account-level preference is not copied by the template. Verify delivery after a run finishes; the setting alone does not prove that an email arrived. See [GitHub's notification guidance](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications).
+6. In your account notification settings, under System > Actions, select Email, do not select Only notify for failed workflows, and save. Successful and failed workflow runs you trigger can then email you. This account-level preference is not copied by the template. Verify delivery after an eligible run finishes; the setting alone does not prove that an email arrived. See [GitHub's Actions notification guidance](https://docs.github.com/en/subscriptions-and-notifications/how-tos/managing-github-actions-notifications).
 
 ## Layout
 
