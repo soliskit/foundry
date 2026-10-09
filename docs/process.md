@@ -46,6 +46,7 @@ Public repos get only what is necessary. No personal details, no private context
 6. **Quota guard for free-tier projects.** Each plan lists its limits, the reading that counts against them and a stop rule. Re-check the readings at each phase. A limit change reopens the plan.
 7. **Keep this starter repo current.** Whenever a blanket change is made to all repos, update this repo too.
 8. **Decisions one at a time.** Each decision comes to the owner alone, with a recommendation.
+9. **One current version.** Every project keeps one current version of its product data. Old data is converted once into the new format; after that, only the new format is kept. The project's decision log records how its own one-time conversion works before it is built.
 
 ## Parallel work
 
