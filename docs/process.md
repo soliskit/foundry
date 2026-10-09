@@ -1,6 +1,6 @@
 # Process
 
-How every software project here is planned and recorded. This file holds process only. The default permissions and gates are in [Soliskit Principles](https://files.instinct.com/0sd5cy7alzbv-soliskit-principles). That page grants nothing by itself: a permission exists only when the owner gives it. Public repos may record authorization scope and status, but never the private grant text or proof behind it.
+How every software project here is planned and recorded. This file holds process only. The default permissions and gates are in [Soliskit Principles](https://files.instinct.com/kf80ch2m24nq-soliskit-principles). That page grants nothing by itself: a permission exists only when the owner gives it. Public repos may record authorization scope and status, but never the private grant text or proof behind it.
 
 ## Playbook
 
