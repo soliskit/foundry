@@ -28,7 +28,6 @@ The Decision Log and the Evidence Record live in the project repo next to the co
 - A necessity pass: nothing stays that the file does not need.
 - One copy of any content. A link to the single source of a fact is fine. A sentence that only tells the reader where to look next is not.
 - Hosted software documents are Soliskit Principles and each project's Playbook.
-- Old project documents are deleted only after their content is committed to git.
 
 ## Workflow rules
 
