@@ -1,6 +1,6 @@
 # Process
 
-How every software project here is planned and recorded. This file holds process only. The default permissions and gates are in [Soliskit Principles](https://files.instinct.com/kf80ch2m24nq-soliskit-principles). That page grants nothing by itself: a permission exists only when the owner gives it. Public repos may record authorization scope and status, but never the private grant text or proof behind it.
+How every software project here is planned and recorded. This file holds process only. The default permissions and gates are in Soliskit Principles. That page grants nothing by itself: a permission exists only when the owner gives it. Public repos may record authorization scope and status, but never the private grant text or proof behind it.
 
 ## Playbook
 
@@ -25,11 +25,8 @@ The Decision Log and the Evidence Record live in the project repo next to the co
 - No version, draft or generation labels.
 - No quotes of the owner's words and no message IDs in any Playbook file or public repo.
 - Only content specific to that project. A project never names another project.
-- Plain English at the very top, then progressively more technical.
-- Openings use plain words: key point first, active voice, concrete verbs, each line says why it matters.
 - A necessity pass: nothing stays that the file does not need.
 - One copy of any content. A link to the single source of a fact is fine. A sentence that only tells the reader where to look next is not.
-- Say "public page", not "brochure".
 - Hosted software documents are Soliskit Principles and each project's Playbook.
 - Old project documents are deleted only after their content is committed to git.
 
