@@ -35,4 +35,4 @@ Configure the repository settings after creating it from the template. The Actio
 - `.github/workflows/test.yml`: push and pull-request checks with read-only permissions and cancellation of replaced runs.
 - `test/template.test.js`: checks that the five document shells are present.
 
-Changes after setup go through pull requests. A copied template does not authorize implementation, merging or spending.
+Changes after setup go through pull requests.

@@ -31,10 +31,7 @@ The Decision Log and the Evidence Record live in the project repo next to the co
 - One copy of any content. A link to the single source of a fact is fine. A sentence that only tells the reader where to look next is not.
 - Say "public page", not "brochure".
 - Hosted software documents are Soliskit Principles and each project's Playbook.
-
-## Public repos
-
-Public repos get only what is necessary. No personal details, no private context. Documenting a project is not permission to publish private context. Old project documents are deleted only after their content is committed to git.
+- Old project documents are deleted only after their content is committed to git.
 
 ## Workflow rules
 
@@ -43,22 +40,13 @@ Public repos get only what is necessary. No personal details, no private context
 3. **Named gate states.** Every status update says three things separately: review state (Not reviewed, Reviewed with findings, or Review passed), owner authorization (None, or the exact scope given) and execution state (Not started, Running, or Done). Nobody calls a plan ready when it is only written.
 4. **Independent review with a checklist.** The reviewer is never the author. Checklist: does each requirement have a check, does each fact have a source, are open items marked open. Findings are accepted or rebutted in writing, not adopted automatically.
 5. **Progress report against the plan.** Each report says which requirement or gate moved, or says nothing moved and why, so a stall shows up early.
-6. **Quota guard for free-tier projects.** Each plan lists its limits, the reading that counts against them and a stop rule. Re-check the readings at each phase. A limit change reopens the plan.
-7. **Keep this starter repo current.** Whenever a blanket change is made to all repos, update this repo too.
-8. **Decisions one at a time.** Each decision comes to the owner alone, with a recommendation.
-9. **One current version.** Every project keeps one current version of its product data. Old data is converted once into the new format; after that, only the new format is kept. The project's decision log records how its own one-time conversion works before it is built.
+6. **Keep this starter repo current.** Whenever a blanket change is made to all repos, update this repo too.
+7. **Decisions one at a time.** Each decision comes to the owner alone, with a recommendation.
 
 ## Parallel work
 
-Independent work runs at the same time; shared work is serialized.
-
-- **Parallel section in every plan.** Every Playbook names what can run at the same time, what must wait, and why. It is titled the same way in each Playbook: Work lanes, or Phases and lanes where phases and lanes share one section.
 - **File ownership list.** Before any stream activates, a list names the owner of every proposed file and marks the shared ones. Every pull request is checked against it.
 - **Lane record.** A named, versioned record. The next lane starts from that version.
 - **Work item record.** Each work item records its scope, owner, input versions, outputs, read and write set, dependencies, independent reviewer and remaining gates.
-- **One lane for shared files.** Changes to shared files go through one integration lane, in dependency order. Conflicting edits do not proceed independently.
+- **One lane for shared files.** Changes to shared files go through one integration lane, in dependency order.
 - **Benchmarks.** Every run targets a fixed commit. Feature commits never enter a benchmark tree. The benchmark branch rebases onto current main before each series.
-
-## Starting a stream early
-
-A later implementation stream starts early only with the owner's approval after a non-interference proof: identical required-check names, test counts, skip structure, coverage gates and deployed output. A file split alone is not proof. Planning, drafting, independent reviews, test-harness design and read-only observation run in parallel without a new approval; implementation start gates do not move.
