@@ -1,6 +1,6 @@
 # Charter
 
-<!-- Open with plain words: what the project is, where it stands and what the owner decides. -->
+<!-- Open with plain words: what the project is, where it stands, and what the owner decides. -->
 
 ## Purpose
 
