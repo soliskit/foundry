@@ -1,8 +1,6 @@
 # Process
 
-How every software project here is planned and recorded. The default permissions and gates are in Soliskit Oversight. That page grants nothing by itself: a permission exists only when the owner gives it. Public repos may record authorization scope and status, but never the private grant text or proof behind it.
-
-The Playbook structure, the Playbook rules and the record definitions are in Soliskit Principles. Progress reports, independent review and keeping this starter current are in Soliskit Oversight.
+How every software project here is planned and recorded. The default permissions and gates are in Oversight. That page grants nothing by itself: a permission exists only when the owner gives it. Public repos may record authorization scope and status, but never the private grant text or proof behind it.
 
 ## Records
 
