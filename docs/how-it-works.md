@@ -4,7 +4,7 @@
 
 ## Requirements
 
-<!-- Give each requirement a stable number and the check that proves it, next to the behavior it describes. -->
+Requirements live in `REQUIREMENTS.md` at the repository root.
 
 ## Failure behavior
 
