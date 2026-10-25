@@ -4,7 +4,7 @@ How every software project here is planned and recorded. The default permissions
 
 ## Records
 
-The Decision Log and the Evidence Record live in the project repo next to the code, under `docs/`. The blank templates are `docs/decision-log.md` and `docs/evidence-record.md`.
+The Decision Log and the Evidence Record live in the project repo next to the code, under `docs/`. The blank templates are `docs/decisions.md` and `docs/evidence-record.md`.
 
 ## Decisions
 

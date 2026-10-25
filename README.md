@@ -7,7 +7,7 @@ A starter for a new project, with a blank Playbook (Charter, Roadmap, How It Wor
 1. Choose **Use this template** on GitHub and create a new repository.
 2. Rename the package and replace this README with the project's introduction.
 3. Fill in `docs/charter.md`, `docs/roadmap.md`, and `docs/how-it-works.md`. Keep unresolved decisions open.
-4. Record decisions in `docs/decision-log.md` and sourced facts in `docs/evidence-record.md`. Keep personal details, message references, and private proof outside the public repository.
+4. Record requirements in `docs/requirements.md`, decisions in `docs/decisions.md`, and sourced facts in `docs/evidence-record.md`. Keep personal details, message references, and private proof outside the public repository.
 5. Add the application's code and meaningful tests. Run `npm ci` and `npm test` before opening a pull request.
 6. Configure the new repository's settings before building, using the checklist below. Template contents do not copy repository settings.
 
@@ -28,11 +28,12 @@ Configure the repository settings after creating it from the template. The Actio
 
 - `docs/charter.md`: purpose, limits, and ordered milestones.
 - `docs/roadmap.md`: phases, exit checks, and work lanes.
-- `docs/how-it-works.md`: numbered requirements and failure behavior.
+- `docs/requirements.md`: numbered requirements, each with the check that proves it.
+- `docs/how-it-works.md`: how the project works and its failure behavior.
 - `docs/process.md`: how every project is planned and recorded.
-- `docs/decision-log.md`: decision, effect, and open or settled status.
+- `docs/decisions.md`: decision, effect, and open or settled status.
 - `docs/evidence-record.md`: source, date checked, and verified or unproven status.
 - `.github/workflows/test.yml`: push and pull-request checks with read-only permissions and cancellation of replaced runs.
-- `test/template.test.js`: checks that the five document shells are present.
+- `test/template.test.js`: checks that the six document shells are present.
 
 Changes after setup go through pull requests.
