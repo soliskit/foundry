@@ -6,7 +6,8 @@ const documents = {
   'charter.md': '# Charter',
   'roadmap.md': '# Roadmap',
   'how-it-works.md': '# How It Works',
-  'decision-log.md': '# Decision Log',
+  'decisions.md': '# Decision Log',
+  'requirements.md': '# Requirements',
   'evidence-record.md': '# Evidence Record',
 };
 
