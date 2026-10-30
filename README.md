@@ -1,14 +1,14 @@
 # Foundry
 
-A starter for a new project, with a blank Playbook (Charter, Roadmap, How It Works), decision and evidence records, and working checks for the document shells, pull request titles and pull request descriptions. No application is included.
+A starter for a new project, with requirement and evidence records and working checks for those records, pull request titles and pull request descriptions. No application is included.
 
 ## Start a project
 
 1. Choose **Use this template** on GitHub and create a new repository.
 2. Rename the package and replace this README with the project's introduction.
-3. Fill in `docs/charter.md`, `docs/roadmap.md`, and `docs/how-it-works.md`. Keep unresolved decisions open.
-4. Record requirements in `docs/requirements.md`, decisions in `docs/decisions.md`, and sourced facts in `docs/evidence-record.md`. Keep personal details, message references, and private proof outside the public repository.
-5. Point the checks at the new repository: set its name in `.github/description_config.json` and `.github/title_config.json`, and as `EXPECTED_REPO` in `.github/workflows/pr-title.yml` and `.github/workflows/pr-description.yml`. Choose the project's decision-record letter in `.github/description_config.json` (F belongs to Foundry itself) and adapt the class definitions in `.github/pull_request_template.md` to the project's code layout. `docs/contributing.md` covers the commit and pull request writing standard.
+3. Extend this README with how the project works, its failure behavior, and its data and interfaces. Keep unresolved decisions open.
+4. Record requirements in `docs/requirements.md` and sourced facts in `docs/evidence-record.md`. Keep personal details, message references, and private proof outside the public repository.
+5. Point the checks at the new repository: set its name in `.github/description_config.json` and `.github/title_config.json`, and as `EXPECTED_REPO` in `.github/workflows/pr-title.yml` and `.github/workflows/pr-description.yml`. Adapt the class definitions in `.github/pull_request_template.md` to the project's code layout. `docs/contributing.md` covers the commit and pull request writing standard.
 6. Add the application's code and meaningful tests. Run `npm ci` and `npm test` before opening a pull request.
 7. Configure the new repository's settings before building, using the checklist below. Template contents do not copy repository settings.
 
@@ -27,19 +27,14 @@ Configure the repository settings after creating it from the template. The Actio
 
 ## Layout
 
-- `docs/charter.md`: purpose, limits, and ordered milestones.
-- `docs/roadmap.md`: phases, exit checks, and work lanes.
 - `docs/requirements.md`: numbered requirements, each with the check that proves it.
-- `docs/how-it-works.md`: how the project works and its failure behavior.
-- `docs/process.md`: how every project is planned and recorded.
-- `docs/decisions.md`: decision, effect, and open or settled status.
 - `docs/evidence-record.md`: source, date checked, and verified or unproven status.
 - `.github/pull_request_template.md`: the required pull request description.
 - `.github/ISSUE_TEMPLATE/`: the bug and feature forms.
 - `.github/commit-template.txt`: the commit message template; setup is in `docs/contributing.md`.
 - `.github/workflows/test.yml`: push and pull-request checks with read-only permissions and cancellation of replaced runs.
 - `.github/workflows/pr-title.yml` and `.github/workflows/pr-description.yml`: trusted-base checks for the pull request title and description.
-- `test/template.test.js`: checks that the six document shells are present.
+- `test/template.test.js`: checks that the two record shells are present.
 - `docs/contributing.md`: the commit and pull request writing standard.
 
 Changes after setup go through pull requests.
