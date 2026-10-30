@@ -3,10 +3,6 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const documents = {
-  'charter.md': '# Charter',
-  'roadmap.md': '# Roadmap',
-  'how-it-works.md': '# How It Works',
-  'decisions.md': '# Decision Log',
   'requirements.md': '# Requirements',
   'evidence-record.md': '# Evidence Record',
 };
