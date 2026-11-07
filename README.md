@@ -38,4 +38,3 @@ Configure the repository settings after creating it from the template. The Actio
 - `docs/contributing.md`: the commit and pull request writing standard.
 
 Changes after setup go through pull requests.
-
