@@ -8,8 +8,8 @@ name: Dependency updates
 # the repository owner's automation so the full pull_request check gate runs
 # natively: events triggered by GITHUB_TOKEN do not start workflow runs, and
 # pull_request events from token-created PRs wait for manual run approval.
-# Pushes to those branches also start runs here: this repository's test
-# workflow triggers on push as well as pull_request.
+# The test workflow also declares a push trigger; GITHUB_TOKEN branch
+# pushes remain subject to the event restriction above.
 #
 # Design: `npm update --save=false` computes the greatest versions
 # satisfying every declared range, so no version parsing decides what is
